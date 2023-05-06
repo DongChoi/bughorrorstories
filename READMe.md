@@ -1,5 +1,17 @@
 # BUG HORROR STORIES
 
+## May 5, 2023
+
+### Time consumed one hour.
+
+- I must be going crazy with prisma and vercel lately. I kept getting type errors even after npx prisma generate and migrating to dev to update the sql files and types for typescript. I had two files, one was called createChildComment and the other one was createComment. I eventually fixed the createComment but didn't realize that the vercel had shown me that the createChildComment was the one with the type errors. So I kept working on the createComment THE WHOLE TIME. Because the code was almost identical but with different end points (as create child comment was in api/comments/:parentCommentId and create comment was in api/projects/:studio/:name). One great skill I learned and honed today was to understand how to navigate index.d.ts. Wow what a life saver that is. It is so much easier to correct types now. I am very proud of myself for learning how to be more efficient at digging down the files to see what my types are supposed to look like.
+
+## May 1, 2023
+
+### Time consumed BASICALLY THE WHOLE DAY.
+
+- ...nextauth typing disaster. Oh my goodness, what a day. I thought everything was good for production after manipulating the session and token output. BUT then when I pushed it to the dev branch, vercel failed to deploy. But guess what, vercel actually showed a informal error log. It was a typing issue and I created the interfaces to reflect what the session and tokens were supposed to be. But guess what, Vercel still logged that there was still a type error. I TRIED TO CHANGE THE TYPES SO MANY TIMES. After struggling with it for like two hours, I worked out, went home and decompressed. I couldn't fall asleep though... because this was one of those things I couldn't let go until I had fixed the problem. I actually solved it pretty fast after going through the next-auth docs (I guess I just needed some time away from it... but coffee kind of hinders me from walking away sometimes lol). I found out that I had to make a next-auth.d.ts and create a session, jwt, and account type that combines existing ones for the call back. AND VOILA! The session type was correct! I was not able to fix the session(session, token, account) typing. I saw that many tutorials used both session and token callback args as any so I took it as a victory for at least doing the session typing correct.
+
 ## April 25, 2023
 
 ### Time consumed ~1.5Hrs
