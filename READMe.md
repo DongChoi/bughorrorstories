@@ -1,5 +1,13 @@
 # BUG HORROR STORIES
 
+## Jul 12, 2023
+
+### Time consumed couple of hours.
+
+- Wow I have not had any horror stories in a while. I do have a recent one, not too bad though. I have been practicing and learning the new changes made by NextJS v12 -> v13 as well as TailWind CSS. For Next13, I had a lot of trouble with the file structure changes introduced in 13. For example, nextauth file and folder systems are different as well as routes being able to handle many different calls. ROUTES ARE AMAZING but the folder structure threw me into a rabbit hole because there is not much documentation on the new version so I had to make sure I was not reading outdate advice. It was also my first time setting up AuthO so that was really fun.
+
+- As for Tailwind CSS I didn't really have that much trouble for the most part. I think this is because I like to think that I have strong fundamental knowledge with vanilla css which is what I've used the whole time. This was my first time also making my application mobile responsive with mobile first design. I had a lot of fun with it but when it got to animations which I never done before as well really messed me up. As far as I know, most people (on youtube at least) render
+
 ## May 5, 2023
 
 ### Time consumed one hour.
